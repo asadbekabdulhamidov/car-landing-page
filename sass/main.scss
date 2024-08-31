@@ -113,11 +113,13 @@ body {
   justify-content: space-between;
   padding: 3.7rem 0;
 }
+
 .sitenav__list {
   display: flex;
   align-items: center;
   gap: 4.8rem;
 }
+
 .sitenav__link a {
   color: $textColor;
   font-size: 1.6rem;
@@ -130,6 +132,47 @@ body {
 }
 .menu {
   display: none;
+}
+
+.sitebar__list {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+  backdrop-filter: blur(96px);
+  background: rgba(255, 255, 255, 0.546);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 4rem 6rem;
+  gap: 4rem;
+  display: none;
+}
+.sitebar li {
+  padding: 1rem 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.sitebar__list a {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 1rem;
+}
+.sitebar__list a:hover {
+  border-color: $mainColor;
+}
+.close i {
+  right: 20px;
+  position: fixed;
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 4rem;
 }
 
 // hero section styles
